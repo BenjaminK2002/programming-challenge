@@ -2,8 +2,8 @@ package de.bcxp.challenge.weather.model;
 
 public class DailyWeather {
     public int day;
-    double maxTemp;
-    double minTemp;
+    public double maxTemp;
+    public double minTemp;
 
     public DailyWeather(int day, double maxTemp, double minTemp){
         this.day = day;

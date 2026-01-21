@@ -37,7 +37,6 @@ class WeatherServiceTest {
 
     @Test
     void shouldReturnFirstDay_WhenMultipleDaysHaveSameSpread() {
-        // Tag 1: Spread 10 | Tag 2: Spread 10. Wir erwarten Tag 1 (Stabilität).
         List<DailyWeather> data = List.of(
                 new DailyWeather(1, 20.0, 10.0),
                 new DailyWeather(2, 30.0, 20.0)

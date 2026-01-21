@@ -13,6 +13,7 @@ public class WeatherService {
             return Optional.empty();
         }
 
+        // Suche nach dem min Spread
         return weatherData.stream()
                 .min(Comparator.comparingDouble(DailyWeather::getSpread));
     }

@@ -17,6 +17,7 @@ public class WeatherController {
     }
 
     public void run() {
+        System.out.println("--- Starte Wetter-Analyse ---");
         List<DailyWeather> data = repository.loadAll();
         Optional<DailyWeather> result = service.findDayWithSmallestSpread(data);
         if (result.isPresent()) {
